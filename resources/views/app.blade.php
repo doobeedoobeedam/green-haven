@@ -512,7 +512,9 @@
             </div>
         </div>
     </div>
-    <footer>Test dikerjakan oleh: <a href="https://github.com/doobeedoobeedam/green-haven" target="_blank">Kusuma Wecitra</a></footer>
+    <footer>
+        <a href="https://github.com/doobeedoobeedam/green-haven" target="_blank">Kusuma Wecitra</a>
+    </footer>
     <script src="{{ asset('script.js') }}"></script>
 </body>
 
