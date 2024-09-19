@@ -1,8 +1,16 @@
+@mixin smooth-scroll {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
     font-family: "Outfit", sans-serif;
     box-sizing: border-box;
+}
+
+html {
+    @include smooth-scroll;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dela+Gothic+One&family=Outfit:wght@100..900&family=Ultra&display=swap");
@@ -260,6 +268,10 @@ $button-bg-color: $primary;
         .hero-section .hero-content {
             border-right: none;
             padding: 50px 30px;
+
+            h2 {
+                font-size: 30px;
+            }
         }
 
         .progress-card .progress-card-content {
@@ -399,6 +411,10 @@ $button-bg-color: $primary;
         // Responsiveness
         @media (max-width: 1024px) {
             padding: 24px 30px;
+
+            .leaderboard-header h3 {
+                font-size: 28px;
+            }
 
             .leaderboard-item {
                 align-items: center;
@@ -621,7 +637,7 @@ $button-bg-color: $primary;
 
         .project-description h2 {
             font-weight: 700;
-            font-size: 32px;
+            font-size: 2.5rem;
             line-height: 45px;
             margin-bottom: 10px;
         }
@@ -701,44 +717,13 @@ $button-bg-color: $primary;
     }
 
     // Responsive design
+
     @media (max-width: 1024px) {
-        padding: 50px 40px;
+        padding: 36px;
 
         .project-header .project-description {
             h2 {
-                font-size: 28px;
-                line-height: 40px;
-            }
-
-            p {
-                max-width: 600px;
-            }
-        }
-
-        .transformation-section {
-            .transformation-images {
-                flex-direction: column;
-                gap: 15px;
-
-                .transformation-image {
-                    img {
-                        height: auto;
-                    }
-
-                    p {
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-    }
-
-    @media (max-width: 1024px) {
-        padding: 30px 20px;
-
-        .project-header .project-description {
-            h2 {
-                font-size: 24px;
+                font-size: 30px !important;
                 line-height: 35px;
             }
 
@@ -761,6 +746,7 @@ $button-bg-color: $primary;
 
                     p {
                         font-size: 14px;
+                        margin-bottom: 20px;
                     }
                 }
             }
@@ -1198,6 +1184,14 @@ $button-bg-color: $primary;
             .sponsorship-header p {
                 padding: 0;
             }
+
+            .sponsorship-header h2 {
+                font-size: 30px;
+            }
+
+            .sponsorship-tier h3 {
+                font-size: 24px !important;
+            }
         }
     }
 }
@@ -1286,6 +1280,7 @@ $button-bg-color: $primary;
             padding: 36px;
 
             h2 {
+                font-size: 30px;
                 padding: 0;
             }
 

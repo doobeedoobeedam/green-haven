@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -213,6 +217,9 @@
     border-right: none;
     padding: 50px 30px;
   }
+  .row .hero-section .hero-content h2 {
+    font-size: 30px;
+  }
   .row .progress-card .progress-card-content .btn-primary {
     display: none;
   }
@@ -327,6 +334,9 @@
 @media (max-width: 1024px) {
   .row .leaderboard-section {
     padding: 24px 30px;
+  }
+  .row .leaderboard-section .leaderboard-header h3 {
+    font-size: 28px;
   }
   .row .leaderboard-section .leaderboard-item {
     align-items: center;
@@ -504,7 +514,7 @@
 }
 .project-section .project-header .project-description h2 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2.5rem;
   line-height: 45px;
   margin-bottom: 10px;
 }
@@ -574,32 +584,10 @@
 }
 @media (max-width: 1024px) {
   .project-section {
-    padding: 50px 40px;
+    padding: 36px;
   }
   .project-section .project-header .project-description h2 {
-    font-size: 28px;
-    line-height: 40px;
-  }
-  .project-section .project-header .project-description p {
-    max-width: 600px;
-  }
-  .project-section .transformation-section .transformation-images {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .project-section .transformation-section .transformation-images .transformation-image img {
-    height: auto;
-  }
-  .project-section .transformation-section .transformation-images .transformation-image p {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1024px) {
-  .project-section {
-    padding: 30px 20px;
-  }
-  .project-section .project-header .project-description h2 {
-    font-size: 24px;
+    font-size: 30px !important;
     line-height: 35px;
   }
   .project-section .project-header .project-description p {
@@ -617,6 +605,7 @@
   }
   .project-section .transformation-section .transformation-images .transformation-image p {
     font-size: 14px;
+    margin-bottom: 20px;
   }
   .project-section .transformation-section .transformation-card {
     display: none;
@@ -965,6 +954,12 @@
   .sponsorship-section .sponsorship-container .sponsorship-header p {
     padding: 0;
   }
+  .sponsorship-section .sponsorship-container .sponsorship-header h2 {
+    font-size: 30px;
+  }
+  .sponsorship-section .sponsorship-container .sponsorship-tier h3 {
+    font-size: 24px !important;
+  }
 }
 
 .cta-section {
@@ -1038,6 +1033,7 @@
     padding: 36px;
   }
   .cta-section .cta-content h2 {
+    font-size: 30px;
     padding: 0;
   }
   .cta-section .cta-content p {
