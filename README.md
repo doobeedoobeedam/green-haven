@@ -1,9 +1,3 @@
-## Sneek Peek
+> [💡] Use Sass
 
-@ **1440px**
-
-![1440](public/sneekpeek/1440.png)
-
-@ **1920px**
-
-![1920](public/sneekpeek/1920.png)
+<!-- ![sneekpeek](public/sneekpeek/1440.png) -->
